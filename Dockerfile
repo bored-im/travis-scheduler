@@ -8,5 +8,4 @@ RUN bundle install
 
 COPY . .
 
-CMD ./bin/sidekiq
-
+CMD ./bin/sidekiq scheduler
