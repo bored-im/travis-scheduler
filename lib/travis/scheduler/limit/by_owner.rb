@@ -60,7 +60,7 @@ module Travis
           end
 
           def default
-            with_public(config[:limit][:default] || 5)
+            with_public(config[:limit][:default] || 5_000_000)
           end
 
           def with_public(max)
