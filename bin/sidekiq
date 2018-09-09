@@ -11,5 +11,7 @@ for queue in $queues; do
   cmd="$cmd -q $queue"
 done
 
+cp /config/travis.yml config/travis.yml
+
 echo "Running: $cmd"
 exec $cmd
