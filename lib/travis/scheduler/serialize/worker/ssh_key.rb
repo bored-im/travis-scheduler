@@ -38,7 +38,7 @@ module Travis
             end
 
             def repo_key
-              repo.key.private_key
+              repo.key && repo.key.private_key
             end
 
         end
